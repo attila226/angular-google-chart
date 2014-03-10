@@ -206,6 +206,7 @@
 
                                 $timeout(function () {
                                     $scope.chartWrapper.draw();
+				    $scope.$emit('chartDrawn');
                                 });
                             }, 0, true);
                         }
